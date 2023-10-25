@@ -1,0 +1,379 @@
+.main{
+ padding: 15px 0 0 0;
+ border-right: 1px solid hsl(0, 0%, 95%);
+
+ display: flex;
+ flex-direction: column;
+ justify-content: start;
+
+ position: sticky;
+ top: 0;
+
+ overflow-y: auto;
+ overflow-x: hidden;
+
+ height: 100vh;
+}
+
+.home-header{
+  border-bottom: 1px solid hsl(0, 0%, 95%);
+
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  margin: 0;
+  padding-left: 18px;
+
+  font-size: 1.15em;
+}
+
+.home-options{
+  margin-top: 30px;
+  padding-left: 18px;
+  padding-bottom: 18px;
+
+  display: flex;
+  justify-content: space-around;
+
+  position: relative;
+
+  color: hsl(0, 0%, 40%);
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.foryou-tab{
+  color: black;
+
+  font-weight: 700;
+}
+
+.blue-tab{
+  position: absolute;
+  bottom: 0;
+  left: 22%;
+
+  width: 55px;
+  height: 4px;
+
+  background-color: hsl(203, 100%, 48%);
+  opacity: 0.7;
+
+  border-radius: 2px;
+}
+
+.whatshappening-container{
+  display: flex;
+  align-items: start;
+
+  padding: 10px 20px;
+  border-bottom: 1px solid hsl(0, 0%, 95%);
+}
+
+.profile-picture{
+  width: 35px;
+
+  margin-right: 15px;
+}
+
+.whatshappening-text{
+  flex: 1;
+}
+
+.whatshappening-text p{
+  font-size: 1.2em;
+
+  color: hsl(0, 0%, 45%);
+
+  margin-top: 12px;
+}
+
+.whatshappening-icons-btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 25px;
+}
+
+.whatshappening-icons{
+  display: flex;
+}
+
+.fa-icon{
+  color: hsl(207, 100%, 60%);
+
+  margin-right: 20px;
+}
+
+.gif{
+  width: 12px;
+  height: 12px;
+
+  border: 2px solid hsl(207, 100%, 60%);
+  border-radius: 3px;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gif-text{
+  color: hsl(207, 100%, 60%);
+
+  font-size: 0.4em;
+  font-weight: bold;
+
+  position: absolute;
+}
+
+.fa-location-dot{
+  opacity: 0.5;
+}
+
+.post-btn{
+  background-color:  hsl(207, 100%, 63%);
+  color: white;
+  opacity: 0.5;
+
+  border: none;
+  border-radius: 20px;
+  padding: 9px 16px;
+
+  font-size: 0.93em;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.numberof-unwatched{
+  border-bottom: 1px solid hsl(0, 0%, 95%);
+  padding: 15px 0;
+}
+
+.numberof-unwatched p{
+  text-align: center;
+
+  color: hsl(207, 100%, 63%);
+  opacity: 0.8;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.page{
+  display: flex;
+  align-items: start;
+
+  padding-left: 18px;
+  margin-top: 3px;
+  border-bottom: 1px solid hsl(0, 0%, 95%);
+}
+
+.hundeyin-page{
+  border-bottom: none;
+}
+
+.page-profile-picture img,
+.profile-picture-follow-option img{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  object-position: top;
+
+  border-radius: 50%;
+}
+
+.page-content{
+  padding: 0 7px 0 3px;
+  flex: 1;
+}
+
+.page-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 5px 0 10px;
+  margin-top: -6px;
+}
+
+.name{
+  display: flex;
+  align-items: center;
+}
+
+.username{
+  font-size: 0.9em;
+  font-weight: 700;
+
+  margin-right: 3px;
+}
+
+.tick{
+  width: 20px;
+
+  margin-right: 3px;
+}
+
+.handle{
+  font-size: 0.9em;
+  font-weight: 500;
+
+  color: hsl(0, 0%, 40%);
+}
+
+.three-dot img{
+  width: 25px;
+}
+
+.tweet{
+  padding-left: 10px;
+
+  font-size: 0.9em;
+  font-weight: 500;
+
+  color: hsl(0, 0%, 25%);
+}
+
+.ronaldo-tweet{
+  padding-right: 5px;
+}
+
+.ronaldo-tweet-inner{
+  color: hsl(207, 100%, 63%);
+}
+
+.ronaldo-post-image{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  border-radius: 20px;
+  padding-right: 5px;
+  margin: 3px 0 0 4px;
+}
+
+.first-grid{
+  border-top-left-radius: 20px;
+}
+.second-grid{
+  border-top-right-radius: 20px;
+}
+.third-grid{
+  border-bottom-left-radius: 20px;
+  margin-top: -8px;
+}
+.fourth-grid{
+  border-bottom-right-radius: 20px;
+  margin-top: -8px;
+}
+
+.ronaldo-post-image img{
+  width: 260px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.vee-tweet{
+  line-height: 2.5em;
+
+  margin-top: -20px;
+
+  width: 430px;
+}
+
+.davido-tweet{
+  line-height: 2.5em;
+
+  margin-top: -20px;
+}
+
+.hundeyin-tweet p,
+.tayo-tweet p{
+  margin-bottom: 25px;
+
+  line-height: 1.3em;
+}
+
+.tayo-first-p{
+  margin-top: 5px;
+}
+
+.tayo-more-text{
+  margin-top: -22px;
+
+  color: hsl(207, 100%, 63%);
+  cursor: pointer;
+}
+.tayo-more-text:hover{
+  text-decoration: underline;
+}
+
+.hundeyin-first-p,
+.tayo-first-p,
+.ronaldo-post{
+  margin-top: -12px;
+}
+
+.post-image img{
+  width: 505px;
+
+  margin-left: 10px;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+
+.post-image .davido-upload{
+  width: 513px;
+}
+
+.post-image .tayo-upload{
+  width: 405px;
+
+  margin-top: -12px;
+}
+
+.stats-tab{
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0 13px 10px 10px;
+}
+
+.stats{
+  display: flex;
+  align-items: center;
+}
+
+.fa-stats-icon{
+  font-size: 1em;
+
+  color: hsl(0, 0%, 38%);
+}
+
+.fa-liked{
+  color: hsl(340, 76%, 55%);
+}
+
+.stats-heart{
+  color: hsl(340, 76%, 55%);
+
+  font-size: 0.85em;
+  font-weight: 500;
+  letter-spacing: 0.005em;
+
+  margin-left: 8px;
+}
+
+.stats-figure{
+  font-size: 0.85em;
+  font-weight: 500;
+  letter-spacing: 0.005em;
+  
+  color: hsl(0, 0%, 38%);
+
+  margin-left: 8px;
+}

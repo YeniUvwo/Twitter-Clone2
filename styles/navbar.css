@@ -1,0 +1,90 @@
+.navbar{
+  position: sticky;
+  top: 0;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  height: 100vh;
+}
+
+.nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  padding: 0 15px 0 110px;
+  
+  width: 40px;  
+}
+
+img{
+  margin: 10px 0;
+}
+
+.twitter-logo{
+  width: 45px;
+
+  margin-top: 15px;
+}
+
+.home-icon{
+  width: 35px;
+}
+
+.home-icon-container{
+  position: relative;
+}
+
+.blue-dot{
+  position: absolute;
+  top: 10.5px;
+  right: 5px;
+
+  width: 7.3px;
+  height: 7px;
+
+  border-radius: 3.5px;
+
+  background-color: hsl(240, 100%, 70%);
+  opacity: 0.8;
+}
+
+.search-icon{
+  width: 28px;
+}
+
+.notifications-icon{
+  width: 23px;
+}
+
+.messages-icon{
+  width: 30px;
+  height: 40px;
+}
+
+.lists-icon{
+  width: 30px;
+  height: 25px;
+}
+
+.communities-icon,
+.twitter-logo-icon,
+.profile-pic-icon{
+  width: 40px;
+}
+
+.user-icon{
+  width: 25px;
+}
+
+.three-dots-icon{
+  width: 28px;
+}
+
+.tweet-icon{
+  width: 110px;
+
+  margin-top: -3px;
+}
+
