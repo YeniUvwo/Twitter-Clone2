@@ -39,7 +39,6 @@
   background-color: hsl(0, 0%, 90%);
 }
 
-
 .foryou-tab{
   color: black;
 
@@ -90,6 +89,14 @@
   height: 40px;
 }
 
+.profile-picture{
+  width: 40px;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
 .profile-picture-hover{
   width: 40px;
   height: 40px;
@@ -97,7 +104,7 @@
   background-color: rgb(0, 0, 0, 0.1);
   opacity: 0;
   pointer-events: none;
-  transition: background-color 0.5s;
+  transition: opacity 0.3s;
   
   border-radius: 50%;
 
@@ -106,13 +113,6 @@
   left: 0;
 }
 
-.profile-picture{
-  width: 40px;
-
-  border-radius: 50%;
-
-  cursor: pointer;
-}
 .profile-picture-container:hover .profile-picture-hover{
   opacity: 1;
 }
@@ -133,7 +133,7 @@
   margin-top: 16px;
 }
 
-.whatshappening-icons-btn{
+.whatshappening-icons-btn-container{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -238,10 +238,6 @@
   cursor: pointer;
 }
 
-.hundeyin-page{
-  border-bottom: none;
-}
-
 .page-profile-picture{
   margin-top: -3px;
 }
@@ -268,6 +264,10 @@
 
   padding: 0 5px 0 10px;
   margin-top: -6px;
+}
+
+.post{
+  margin-top: 3px;
 }
 
 .name{
@@ -338,13 +338,18 @@
   z-index: 1;
 
   opacity: 0;
-  transition: display 5s;
-
+  transition: opacity 0.1s ease-in 0.5s, visibility 0s 0.1s;
   pointer-events: none;
 }
 
 .more-tooltip-container:hover .more-tooltip{
   opacity: 1;
+  visibility: visible;
+}
+
+.more-tooltip-container:not(:hover) .more-tooltip{
+  opacity: 0;
+  visibility: hidden;
 }
 
 .tweet{
@@ -356,21 +361,68 @@
   color: hsl(0, 0%, 25%);
 }
 
-.ronaldo-tweet{
+.ronaldo-tweet p{
   padding-right: 5px;
 }
 
-.ronaldo-tweet-inner{
+.ronaldo-tweet-inner-p{
   color: hsl(207, 100%, 63%);
 }
 
-.ronaldo-post-image{
+.davido-tweet{
+  line-height: 2.5em;
+
+  margin-top: -20px;
+}
+
+.tayo-first-tweet-p{
+  margin-top: 5px;
+}
+
+.tayo-showmore-tweet{
+  margin-top: -22px;
+
+  color: hsl(207, 100%, 63%);
+  cursor: pointer;
+}
+.tayo-showmore-tweet:hover{
+  text-decoration: underline;
+}
+
+.vee-tweet{
+  line-height: 2.5em;
+
+  margin-top: -20px;
+
+  width: 430px;
+}
+
+.ronaldo-tweet,
+.tayo-first-tweet-p,
+.hundeyin-first-p{
+  margin-top: -12px;
+}
+
+.tayo-tweet p,
+.hundeyin-tweet p{
+  margin-bottom: 25px;
+
+  line-height: 1.3em;
+}
+
+.ronaldo-tweet-image-upload{
   display: grid;
   grid-template-columns: 1fr 1fr;
 
   border-radius: 20px;
   padding-right: 5px;
   margin: 3px 0 0 4px;
+}
+
+.ronaldo-tweet-image-upload img{
+  width: 260px;
+  height: 150px;
+  object-fit: cover;
 }
 
 .first-grid{
@@ -388,79 +440,41 @@
   margin-top: -8px;
 }
 
-.ronaldo-post-image img{
-  width: 260px;
-  height: 150px;
-  object-fit: cover;
-}
-
-.vee-tweet{
-  line-height: 2.5em;
-
-  margin-top: -20px;
-
-  width: 430px;
-}
-
-.davido-tweet{
-  line-height: 2.5em;
-
-  margin-top: -20px;
-}
-
-.hundeyin-tweet p,
-.tayo-tweet p{
-  margin-bottom: 25px;
-
-  line-height: 1.3em;
-}
-
-.tayo-first-p{
-  margin-top: 5px;
-}
-
-.tayo-more-text{
-  margin-top: -22px;
-
-  color: hsl(207, 100%, 63%);
-  cursor: pointer;
-}
-.tayo-more-text:hover{
-  text-decoration: underline;
-}
-
-.hundeyin-first-p,
-.tayo-first-p,
-.ronaldo-post{
-  margin-top: -12px;
-}
-
-.post-image img{
-  width: 505px;
-
+.tweet-image-upload img{
   margin-left: 10px;
   margin-top: 5px;
   border-radius: 20px;
 }
 
-.post-image .davido-upload{
+.davido-upload{
   width: 513px;
 }
 
-.post-image .tayo-upload{
+.tayo-upload{
   width: 405px;
 
   margin-top: -12px;
+}
+
+.vee-upload{
+  width: 505px;
+}
+
+.hundeyin-page{
+  border-bottom: none;
+  padding-bottom: 20px;
 }
 
 .stats-tab{
   display: flex;
   justify-content: space-between;
 
-  padding: 0 13px 10px 10px;
+  padding: 0 0 5px;
+
+  margin-top: -5px;
 }
 
-.stats{
+.stats-container{
   display: flex;
   align-items: center;
 }
@@ -468,33 +482,80 @@
 .fa-stats-icon{
   font-size: 1em;
 
-  color: hsl(0, 0%, 38%);
+  color: hsl(0, 0%, 45%);
+
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.fa-chart{
+  padding: 9px 10px;
+}
+
+.fa-bookmark-main,
+.fa-share-post{
+  padding: 10px 12px;
+}
+
+.fa-bookmark-main{
+  margin-left: 10px;
 }
 
 .fa-liked{
   color: hsl(340, 76%, 55%);
 }
 
-.stats-heart{
+.stats-figure-liked{
   color: hsl(340, 76%, 55%);
 
   font-size: 0.85em;
   font-weight: 500;
   letter-spacing: 0.005em;
-
-  margin-left: 8px;
 }
 
 .stats-figure{
   font-size: 0.85em;
   letter-spacing: 0.005em;
   
-  color: hsl(0, 0%, 38%);
-
-  margin-left: 8px;
+  color: hsl(0, 0%, 40%);
 }
 
 .fa-bookmark-main{
-  color: hsl(0, 0%, 38%);
-  margin-right: 18px;
+  margin-right: -5px;
 }
+
+.stats-comment-container:hover .fa-comment-dots,
+.stats-comment-container:hover .stats-figure-comment-dots,
+
+.stats-chart-container:hover .fa-chart,
+.stats-chart-container:hover .stats-figure-chart,
+
+.fa-bookmark-main:hover,
+.fa-share-post:hover {
+  color: hsl(207, 100%, 46%);
+}
+
+.stats-comment-container:hover .fa-comment-dots,
+.stats-chart-container:hover .fa-chart,
+.fa-bookmark-main:hover,
+.fa-share-post:hover {
+  background-color: rgb(143, 205, 255, 0.2);
+}
+
+.stats-retweet-container:hover .fa-retweet,
+.stats-retweet-container:hover .stats-figure-retweet{
+  color: hsl(120, 100%, 35%);
+}
+.stats-retweet-container:hover .fa-retweet{
+  background-color: rgb(166, 197, 166, 0.3);
+}
+
+.stats-likes-container:hover .fa-likes,
+.stats-likes-container:hover .stats-figure-likes{
+  color: hsl(340, 76%, 55%);
+}
+
+.stats-likes-container:hover .fa-likes{
+  background-color: rgb(227, 53, 111, 0.2);
+}
+
