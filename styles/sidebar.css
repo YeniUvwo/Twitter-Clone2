@@ -8,7 +8,7 @@
   position: relative;
 }
 
-.fa-magnifying-glass{
+.fa-magnifying-glass-sidebar{
   color: hsl(0, 0%, 55%);
 
   position: absolute;
@@ -94,7 +94,7 @@ input{
   font-size: 0.85em;
 }
 
-.fa-ellipsis{
+.fa-ellipsis-sidebar{
   color: hsl(0, 0%, 30%);
 
   font-size: 0.9em;

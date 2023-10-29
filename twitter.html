@@ -19,48 +19,107 @@
   </head>
   <body>
     <div class="container">
-      <div class="navbar">
-        <div class="nav">
-          <img class="twitter-logo" src="Images/twitter-logo.png" alt="">
-          <div class="home-icon-container">
-            <img class="home-icon" src="Images/home-icon.svg" alt="">
+      <div class="navbar">    
+        <div class="navbar-logo-box">
+          <i class="fa-brands fa-x-twitter fa-logo-navbar"></i>
+        </div>
+        <div class="navbar-img-box navbar-tooltip-container">
+          <div class="blue-dot-container">
+            <i class="fa-solid fa-house fa-icon-navbar"></i>
             <div class="blue-dot"></div>
           </div>
-          <img class="search-icon" src="Images/search-icon.png" alt="">
-          <img class="notifications-icon" src="Images/notifications-icon.png" alt="">
-          <img class="messages-icon" src="Images/messages-icon.png" alt="">
-          <img class="lists-icon" src="Images/lists-icon.png" alt="">
-          <img class="communities-icon" src="Images/communities icon.png" alt="">
-          <img class="twitter-logo-icon" src="Images/twitter-logo.png" alt="">
-          <img class="user-icon" src="Images/user-icon.png" alt="">
-          <img class="three-dots-icon" src="Images/three-dots-icon.png" alt="">
+          <p class="navbar-tooltip">Home</p>
+        </div>
+        <div class="navbar-img-box navbar-tooltip-container">
+          <i class="fa-solid fa-magnifying-glass fa-icon-navbar"></i>
+          <p class="navbar-tooltip">Explore</p>
+        </div>
+        <div class="navbar-img-box navbar-tooltip-container">
+          <i class="fa-regular fa-bell fa-icon-navbar"></i>
+          <p class="navbar-tooltip">Notifications</p>
+        </div>
+        <div class="navbar-img-box navbar-tooltip-container">
+          <i class="fa-regular fa-envelope fa-icon-navbar"></i>
+          <p class="navbar-tooltip">Messages</p>
+        </div>
+        <div class="navbar-img-box navbar-tooltip-container">
+          <i class="fa-solid fa-clipboard-list fa-icon-navbar"></i>
+          <p class="navbar-tooltip">Lists</p>
+        </div>
+        <div class="navbar-img-box navbar-tooltip-container">
+          <div class="communities-container">
+            <i class="fa-regular fa-user fa-user-left fa-icon-navbar"></i>
+            <i class="fa-regular fa-user fa-user-right fa-icon-navbar"></i>
+          </div>
+          <p class="navbar-tooltip">Communities</p>
+        </div>
+        <div class="navbar-img-box navbar-tooltip-container">
+          <i class="fa-brands fa-x-twitter fa-icon-navbar twitter-navbar-icon"></i>
+          <p class="navbar-tooltip">Premium</p>
+        </div>
+        <div class="navbar-img-box navbar-tooltip-container">
+          <i class="fa-regular fa-user fa-icon-navbar"></i>
+          <p class="navbar-tooltip">Profile</p>
+        </div>
+        <div class="navbar-img-box navbar-tooltip-container">
+          <div class="more-container">
+            <i class="fa-regular fa-circle fa-circle-navbar fa-icon-navbar"></i>
+            <i class="fa-solid fa-ellipsis fa-ellipsis-navbar fa-icon-navbar"></i>
+          </div>
+          <p class="navbar-tooltip">More</p>
+        </div>
+        <div class="navbar-tooltip-container tweet-hover-box-container">
           <img class="tweet-icon" src="Images/tweet-icon.png" alt="">
+          <p class="navbar-tooltip navbar-tooltip-post">Post</p>
+          <div class="tweet-icon-hover-box"></div>
+        </div>
+        <div class="navbar-profile-pic-box navbar-tooltip-container">
           <img class="profile-pic-icon" src="Images/profile pic.png" alt="">
+          <p class="navbar-tooltip-account">Accounts</p>
         </div>
       </div>
 
       <div class="main">
-        <div class="home-header">
-          <h1>Home</h1>
+        <div class="home-settings">
           <div class="home-options">
-            <p class="foryou-tab">For you</p>
-            <div class="blue-tab"></div>
-            <p class="following-tab">Following</p>
+            <div class="foryou-tab-container">
+              <p class="foryou-tab">For you</p>
+              <div class="blue-tab"></div>
+            </div>
+            <div class="following-tab-container">
+              <p class="following-tab">Following</p>
+            </div> 
+          </div>
+          <div class="fa-gear-container">
+            <i class="fa-solid fa-gear"></i>
           </div>
         </div>
         
         <div class="whatshappening-container">
-          <img class="profile-picture" src="Images/profile pic.png" alt="">
+          <div class="profile-picture-container">
+            <img class="profile-picture" src="Images/profile pic.png" alt="">
+            <div class="profile-picture-hover"></div>
+          </div>
           <div class="whatshappening-text">
             <p>What is happening?!</p>
             <div class="whatshappening-icons-btn">
               <div class="whatshappening-icons">
-                <i class=" fa-icon fa-solid fa-photo-film"></i>
+                <div class="main-icon-container">
+                  <i class=" fa-icon fa-solid fa-photo-film"></i>
+                </div>
+                <div class="main-icon-container">
                   <div  class=" fa-icon gif"><span class="gif-text">GIF</span></div>
+                </div>
+                <div class="main-icon-container">
                   <i class="fa-icon fa-solid fa-square-poll-vertical"></i>
+                </div>
+                <div class="main-icon-container">
                   <i class="fa-icon fa-regular fa-face-smile"></i>
+                </div>
+                <div class="main-icon-container">
                   <i class="fa-icon fa-regular fa-calendar-days"></i>
-                  <i class="fa-icon fa-solid fa-location-dot"></i>
+                </div>
+                <i class="fa-icon fa-solid fa-location-dot"></i>
               </div>
               <button class="post-btn">Post</button>
             </div>
@@ -72,18 +131,20 @@
         </div>
 
         <div class="page">
-          <div class="page-profile-picture">
+          <div class="page-profile-picture profile-picture-container">
             <img src="Images/ronaldo-profile-picture.jpg" alt="">
+            <div class="profile-picture-hover"></div>
           </div>
           <div class="page-content">
             <div class="page-header">
               <div class="name">
-                <p class="username name">Christiano Ronaldo</p>
-                <img class="tick" src="Images/verification.png" alt="">
-                <p class="handle">@Christiano &#183 4h</p>
+                <p class="username">Christiano Ronaldo</p>
+                <img class="tick" src="Images/verify-tick.avif" alt="">
+                <p class="handle">@Christiano &#183 <span class="post-time">4h</span></p>
               </div>
-              <div class="three-dot">
-                <img src="Images/three-dots.png" alt="">
+              <div class="three-dot more-tooltip-container">
+                <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
+                <p class="more-tooltip">More</p>
               </div>
             </div>
             <div class="post ronaldo-post">
@@ -114,6 +175,7 @@
                 <p class="stats-figure">12M</p>
               </div>
               <div class="share-stats">
+                <i class="fa-regular fa-bookmark fa-bookmark-main"></i>
                 <i class="fa-solid fa-stats-icon fa-arrow-up-from-bracket"></i>
                 <p></p>
               </div>
@@ -122,18 +184,20 @@
         </div>
 
         <div class="page">
-          <div class="page-profile-picture">
+          <div class="page-profile-picture profile-picture-container">
             <img src="Images/davido-profile-picture.jpg" alt="">
+            <div class="profile-picture-hover"></div>
           </div>
           <div class="page-content">
             <div class="page-header">
               <div class="name">
                 <p class="username name">Davido</p>
-                <img class="tick" src="Images/verification.png" alt="">
-                <p class="handle">@Davido &#183 5h</p>
+                <img class="tick" src="Images/verify-tick.avif" alt="">
+                <p class="handle">@Davido &#183 <span class="post-time">5h</span></p>
               </div>
-              <div class="three-dot">
-                <img src="Images/three-dots.png" alt="">
+              <div class="three-dot main-tooltip-container>
+                <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
+                <p class="nav-tooltip  more-tooltip">More</p>
               </div>
             </div>
             <div class="post">
@@ -173,18 +237,19 @@
         </div>
 
         <div class="page">
-          <div class="page-profile-picture">
+          <div class="page-profile-picture profile-picture-container">
             <img src="Images/tayoaina-profile-picture.jpg" alt="">
+            <div class="profile-picture-hover"></div>
           </div>
           <div class="page-content">
             <div class="page-header">
               <div class="name">
                 <p class="username name">Tayo Aina</p>
-                <img class="tick" src="Images/verification.png" alt="">
-                <p class="handle">@tayoainafilms &#183 1h</p>
+                <img class="tick" src="Images/verify-tick.avif" alt="">
+                <p class="handle">@tayoainafilms &#183 <span class="post-time">1h</span></p>
               </div>
               <div class="three-dot">
-                <img src="Images/three-dots.png" alt="">
+                <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
               </div>
             </div>
             <div class="post">
@@ -225,18 +290,19 @@
         </div>
 
         <div class="page">
-          <div class="page-profile-picture">
+          <div class="page-profile-picture profile-picture-container">
             <img src="Images/veeiye-profile-picture.jpg" alt="">
+            <div class="profile-picture-hover"></div>
           </div>
           <div class="page-content">
             <div class="page-header">
               <div class="name">
                 <p class="username name">VEE.</p>
-                <img class="tick" src="Images/verification.png" alt="">
-                <p class="handle">@veeiye &#183 4h</p>
+                <img class="tick" src="Images/verify-tick.avif" alt="">
+                <p class="handle">@veeiye &#183 <span class="post-time">4h</span></p>
               </div>
               <div class="three-dot">
-                <img src="Images/three-dots.png" alt="">
+                <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
               </div>
             </div>
             <div class="post">
@@ -273,18 +339,19 @@
         </div>
 
         <div class="page hundeyin-page">
-          <div class="page-profile-picture">
+          <div class="page-profile-picture profile-picture-container">
             <img src="Images/hundeyin-profile-picture.jpg" alt="">
+            <div class="profile-picture-hover"></div>
           </div>
           <div class="page-content">
             <div class="page-header">
               <div class="name">
                 <p class="username name">David Hundeyin</p>
-                <img class="tick" src="Images/verification.png" alt="">
-                <p class="handle">@DavidHundeyin &#183 1h</p>
+                <img class="tick" src="Images/verify-tick.avif" alt="">
+                <p class="handle">@DavidHundeyin &#183 <span class="post-time">1h</span></p>
               </div>
               <div class="three-dot">
-                <img src="Images/three-dots.png" alt="">
+                <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
               </div>
             </div>
             <div class="post">
@@ -324,7 +391,7 @@
       <div class="sidebar">
         <div class="input-container">
           <input type="text" name="" placeholder="Search" id="">
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-magnifying-glass fa-magnifying-glass-sidebar"></i>
         </div>
 
         <div class="premium-subscription">
@@ -343,7 +410,7 @@
               <p class="trending-stat">24.8K posts</p>
             </div>
            <div class="trending-dots">
-            <i class="fa-solid fa-ellipsis"></i>
+            <i class="fa-solid fa-ellipsis fa-ellipsis-sidebar"></i>
            </div>
           </div>
 
@@ -360,7 +427,7 @@
               <p class="trending-stat">42.8K posts</p>
             </div>
            <div class="trending-dots">
-            <i class="fa-solid fa-ellipsis"></i>
+            <i class="fa-solid fa-ellipsis fa-ellipsis-sidebar"></i>
            </div>
           </div>
 
@@ -371,7 +438,7 @@
               <p class="trending-stat">20.1K posts</p>
             </div>
            <div class="trending-dots">
-            <i class="fa-solid fa-ellipsis"></i>
+            <i class="fa-solid fa-ellipsis fa-ellipsis-sidebar"></i>
            </div>
           </div>
 
@@ -382,7 +449,7 @@
               <p class="trending-stat">9,866 posts</p>
             </div>
            <div class="trending-dots">
-            <i class="fa-solid fa-ellipsis"></i>
+            <i class="fa-solid fa-ellipsis fa-ellipsis-sidebar"></i>
            </div>
           </div>
 
@@ -393,7 +460,7 @@
               <p class="trending-stat">5,676 posts</p>
             </div>
            <div class="trending-dots">
-            <i class="fa-solid fa-ellipsis"></i>
+            <i class="fa-solid fa-ellipsis fa-ellipsis-sidebar"></i>
            </div>
           </div>
 
@@ -404,7 +471,7 @@
               <p class="trending-stat">1,853 posts</p>
             </div>
            <div class="trending-dots">
-            <i class="fa-solid fa-ellipsis"></i>
+            <i class="fa-solid fa-ellipsis fa-ellipsis-sidebar"></i>
            </div>
           </div>
 
@@ -415,7 +482,7 @@
               <p class="trending-stat">7,709 posts</p>
             </div>
            <div class="trending-dots">
-            <i class="fa-solid fa-ellipsis"></i>
+            <i class="fa-solid fa-ellipsis fa-ellipsis-sidebar"></i>
            </div>
           </div>
 
@@ -426,7 +493,7 @@
               <p class="trending-stat">4,767 posts</p>
             </div>
            <div class="trending-dots">
-              <i class="fa-solid fa-ellipsis"></i>
+              <i class="fa-solid fa-ellipsis fa-ellipsis-sidebar"></i>
            </div>
           </div>
 
@@ -437,7 +504,7 @@
               <p class="trending-stat">9,270 posts</p>
             </div>
            <div class="trending-dots">
-              <i class="fa-solid fa-ellipsis"></i>
+              <i class="fa-solid fa-ellipsis fa-ellipsis-sidebar"></i>
            </div>
           </div>
 
