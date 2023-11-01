@@ -312,11 +312,13 @@ input{
 .fixed-message-icons{
   display: flex;
   align-items: center;
+
+  margin-bottom: 10px;
 }
 
 .fixed-message-icon-container{
   position: relative;
-
+  font-size: 1.2em;
   margin-right: 20px;
 }
 
@@ -331,4 +333,50 @@ input{
   padding: 2px;
 
   font-size: 8px;
+}
+
+.fa-angles-up{
+  font-size: 1.1em;
+}
+
+.fixed-message-tooltip-container{
+  position: relative;
+  cursor: pointer;
+}
+
+.fixed-message-tooltip{
+  font-size: 0.65em;
+
+  background-color: rgb(0, 0, 0, 0.6);
+  color: white;
+
+  padding: 3px 4px;
+  border-radius: 2px;
+
+  position: absolute;
+  top: -23px;
+  right: -15px;
+  z-index: 1;
+
+  opacity: 0;
+  transition: opacity 0.1s ease-in 0.5s, visibility 0s 0.1s;
+
+  pointer-events: none;
+}
+
+.message-tooltip-fixed{
+  font-size: 0.6em;
+  white-space: nowrap;
+
+  right: -35px;
+}
+
+.fixed-message-tooltip-container:hover .fixed-message-tooltip{
+  opacity: 1;
+  visibility: visible;
+}
+
+.fixed-message-tooltip-container:not(:hover) .fixed-message-tooltip{
+  opacity: 0;
+  visibility: hidden;
 }
