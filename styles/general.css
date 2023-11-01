@@ -2,7 +2,6 @@ body{
   font-family: 'Open Sans', sans-serif;
 
   margin: 0;
-  box-sizing: border-box;
 }
 
 .container{
@@ -16,4 +15,8 @@ p{
 
 img{
   margin: 10px 0;
+}
+
+*{
+  box-sizing: border-box;
 }

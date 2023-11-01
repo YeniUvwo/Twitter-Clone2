@@ -1,5 +1,5 @@
 .sidebar{
-  padding: 5px 0 0 25px;
+  padding: 5px 0 0 30px;
 
   position: relative;
 }
@@ -19,43 +19,48 @@
   color: hsl(0, 0%, 55%);
 
   position: absolute;
-  left: 22px;
+  left: 21px;
   top: 18px;
 
   font-size: 1em;
 }
 
 input{
-  width: 290px;
+  width: 350px;
 
-  padding: 12px 0 12px 60px;
+  padding: 12px 0 12px 55px;
   border-radius: 20px;
   border: none;
 
   background-color: hsl(0, 0%, 97%);
 
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .premium-subscription,
 .trends,
 .who-to-follow{
-  border-radius: 20px;
-  padding: 12px 20px 12px;
-
+  border-radius: 15px;
+ 
   background-color: hsl(0, 0%, 97%);
   opacity: 0.9;
 
-  width: 310px;
+  width: 350px;
 }
 
 .premium-subscription{
   margin-top: 60px;
+  padding: 12px 20px;
 }
 
 .trends,
 .who-to-follow{
   margin-top: 17px;
+}
+
+.trends-header,
+.who-to-follow-header{
+  padding: 12px 20px 5px;
 }
 
 .premium-header,
@@ -75,20 +80,27 @@ input{
 .premium-btn{
   border: none;
   border-radius: 20px;
-  padding: 10px 16px;
+  padding: 10px 18px 9px;
 
   background-color: hsl(0, 0%, 0%);
   color: hsl(0, 0%, 100%);
+  cursor: pointer;
 
   font-size: 0.9em;
   font-weight: 700;
 }
 
 .trending{
-  margin-top: 20px;
+  padding: 10px 10px 10px 20px;
 
   display: flex;
   justify-content: space-between;
+}
+.trending:hover,
+.follow-option:hover,
+.more-text:hover{
+  background-color: hsl(0, 0%, 95%);
+  cursor: pointer;
 }
 
 .trending-header{
@@ -116,7 +128,7 @@ input{
 }
 
 .promotions{
-  margin-top: 20px;
+  padding: 10px 20px;
 }
 
 .promotions-hashtag{
@@ -151,14 +163,11 @@ input{
   cursor: pointer;
   opacity: 0.8;
 
-  margin: 20px 0 5px;
+  padding: 15px 0 15px 20px;
+  border-radius: 0 0 15px 15px;
 
   font-size: 0.9em;
   font-weight: 500;
-}
-
-.who-to-follow-header{
-  margin-bottom: 10px;
 }
 
 .follow-option{
@@ -166,8 +175,7 @@ input{
   align-items: center;
   justify-content: space-between;
 
-
-  margin-top: 5px;
+  padding: 5px 15px;
 }
 
 .profile-picture-follow-option{
@@ -230,9 +238,8 @@ input{
   display: flex;
 
   font-size: 0.85em;
-  font-weight: 500;
 
-  color: hsl(0, 0%, 50%);
+  color: hsl(0, 0%, 40%);
 }
 
 .top-terms p,
@@ -244,6 +251,11 @@ input{
   margin-right: 2px;
 }
 
+.terms p:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .more-terms{
   display: flex;
   align-items: center;
@@ -252,14 +264,19 @@ input{
 }
 
 .fa-ellipsis-terms{
-  margin: 2px 0 0 3px;
-
+  margin: 4px 0 0 0;
+  font-size: 0.8em;
   color: hsl(0, 0%, 50%);
 }
 
 .copyright-terms{
   display: flex;
   align-items: center;
+}
+
+.copyright-terms p:hover{
+  text-decoration: none;
+  pointer-events: none;
 }
 
 .fa-copyright{
@@ -278,8 +295,8 @@ input{
   bottom: 0;
   right: 20px;
 
-  width: 350px;
-  height: 40px;
+  width: 400px;
+  height: 50px;
 
   padding: 10px 30px 0 15px;
   box-shadow: 0 4px 8px rgb(0, 0, 0, 0.4);
