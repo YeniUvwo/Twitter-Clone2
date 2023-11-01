@@ -37,7 +37,7 @@
 
 .foryou-tab-container,
 .following-tab-container{
-  padding: 18px 110px ;
+  padding: 18px 105px ;
 
   cursor: pointer;
 }
@@ -74,6 +74,7 @@
   justify-content: center;
 
   border-radius: 50%;
+  margin-right: 10px;
 
   cursor: pointer;
 }
