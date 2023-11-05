@@ -1,0 +1,234 @@
+.desktop-header{
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+
+  position: fixed;
+  top: 0;
+  left: 180px;
+  right: 0;
+  height: 55px;
+  z-index: 1;
+
+  backdrop-filter: blur(15px);
+  background-color: rgb(255, 255, 255, 0.9);
+}
+
+.home-settings{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid hsl(0, 0%, 95%);
+  border-right: 1px solid hsl(0, 0%, 95%);
+}
+
+.home-options{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  color: hsl(0, 0%, 40%);
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.foryou-tab-container,
+.following-tab-container{
+  padding: 18px 105px ;
+
+  cursor: pointer;
+}
+.foryou-tab-container:hover,
+.following-tab-container:hover{
+  background-color: hsl(0, 0%, 90%);
+}
+
+.foryou-tab{
+  color: black;
+
+  font-weight: 700;
+}
+
+.blue-tab{
+  position: absolute;
+  bottom: 0;
+  left: 9.7%;
+
+  width: 57px;
+  height: 3.7px;
+
+  background-color: hsl(203, 100%, 48%);
+
+  border-radius: 2px;
+}
+
+.fa-gear-container{
+  width: 35px;
+  height: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  margin-right: 10px;
+
+  cursor: pointer;
+
+  position: relative;
+}
+.fa-gear-container:hover{
+  background-color: hsl(0, 0%, 90%);
+}
+
+.fa-gear-tooltip{
+  font-size: 0.7em;
+  white-space: nowrap;
+
+  background-color: rgb(0, 0, 0, 0.6);
+  color: white;
+
+  padding: 3px 4px;
+  border-radius: 2px;
+
+  position: absolute;
+  bottom: -23px;
+  z-index: 1;
+
+  opacity: 0;
+  transition: opacity 0.1s ease-in 0.5s, visibility 0s 0.1s;
+  pointer-events: none;
+}
+
+.fa-gear-container:hover .fa-gear-tooltip{
+  opacity: 1;
+  visibility: visible;
+}
+
+.fa-gear-container:not(:hover) .fa-gear-tooltip{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.input-container{
+  margin-left: 30px;
+  margin-top: 5px;
+
+  position: relative;
+}
+
+.fa-magnifying-glass-sidebar{
+  color: hsl(0, 0%, 55%);
+
+  position: absolute;
+  left: 20px;
+  top: 14px;
+
+  font-size: 1em;
+}
+
+input{
+  width: 350px;
+
+  padding: 12px 0 12px 55px;
+  border-radius: 20px;
+  border: none;
+
+  background-color: hsl(0, 0%, 97%);
+
+  font-size: 1em;
+}
+
+.mobile-header{
+  display: none;
+}
+
+@media(min-width:999.9px) and (max-width: 1243px) {
+  .desktop-header{
+    display: none;
+  }
+}
+
+@media(max-width: 1243px) {
+  .mobile-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    padding: 0 10% 0 8%;
+
+    backdrop-filter: blur(15px);
+    background-color: rgb(255, 255, 255, 0.9);
+  }
+
+  .mobile-profile-picture img{
+    width: 30px;
+    border-radius: 50%;
+  }
+
+  .mobile-logo{
+    font-size: 1.6em;
+  }
+
+  .mobile-settings{
+    font-size: 1em;
+  }
+
+  .mobile-bottom-header{
+    display: none;
+  }
+}
+
+
+@media(max-width: 999.9px) {
+  .input-container{
+    display: none;
+  }
+
+  .mobile-header{
+    padding: 0 23% 0 22%;
+
+    backdrop-filter: blur(40px);
+  }
+
+  .desktop-header{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    left: 0;
+    margin-top: 50px;
+    padding: 0 20% 0 18%;
+ 
+    backdrop-filter: blur(40px);
+
+    position: relative;
+  }
+
+  .home-settings{
+    border-right: none;
+    border-bottom: none;
+ 
+  }
+
+  .home-options{
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .foryou-tab-container,
+  .following-tab-container{
+    padding: 0;
+  }
+
+  .blue-tab{
+    position: absolute;
+    bottom: 0;
+    left: 28.3%;
+  }
+}

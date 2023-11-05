@@ -1,40 +1,7 @@
 .sidebar{
-  padding: 5px 0 0 30px;
+  padding: 15px 0 0 30px;
 
-  position: relative;
-}
-
-.input-container{
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  padding-top: 5px;
-
-  background-color: white;
-
-  height: 53px;
-}
-
-.fa-magnifying-glass-sidebar{
-  color: hsl(0, 0%, 55%);
-
-  position: absolute;
-  left: 21px;
-  top: 18px;
-
-  font-size: 1em;
-}
-
-input{
-  width: 350px;
-
-  padding: 12px 0 12px 55px;
-  border-radius: 20px;
-  border: none;
-
-  background-color: hsl(0, 0%, 97%);
-
-  font-size: 1em;
+  position: sticky;
 }
 
 .premium-subscription,
@@ -49,8 +16,14 @@ input{
 }
 
 .premium-subscription{
-  margin-top: 60px;
   padding: 12px 20px;
+}
+
+@media(max-width: 1243px) {
+  .premium-subscription{
+    border-top: 1px solid hsl(0, 0%, 95%);
+  }
+  
 }
 
 .trends,
@@ -379,4 +352,19 @@ input{
 .fixed-message-tooltip-container:not(:hover) .fixed-message-tooltip{
   opacity: 0;
   visibility: hidden;
+}
+
+@media(max-width: 999.9px) {
+  .sidebar{
+    display: none;
+  }
+}
+
+@media(min-width: 1000px) and (max-width: 1243px) {
+  .fixed-message-box{ 
+    bottom: 50px;
+
+    width: 400px;
+    height: 52px;
+  }
 }

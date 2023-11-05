@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/sidebar.css">
@@ -79,517 +80,588 @@
         </div>
       </div>
 
-      <div class="main">
-        <div class="home-settings">
-          <div class="home-options">
-            <div class="foryou-tab-container">
-              <p class="foryou-tab">For you</p>
-              <div class="blue-tab"></div>
-            </div>
-            <div class="following-tab-container">
-              <p class="following-tab">Following</p>
-            </div> 
+      <div class="mobile-nav">
+        <div class="navbar-img-box navbar-tooltip-container">
+          <div class="blue-dot-container">
+            <i class="fa-solid fa-house fa-icon-navbar"></i>
+            <div class="blue-dot"></div>
           </div>
-          <div class="fa-gear-container">
-            <i class="fa-solid fa-gear"></i>
-          </div>
-        </div>
-        
-        <div class="whatshappening-container">
-          <div class="profile-picture-container">
-            <img class="profile-picture" src="Images/profile pic.png" alt="">
-            <div class="profile-picture-hover"></div>
-          </div>
-          <div class="whatshappening-text">
-            <p>What is happening?!</p>
-            <div class="whatshappening-icons-btn-container">
-              <div class="whatshappening-icons">
-                <div class="main-icon-container">
-                  <i class=" fa-icon fa-solid fa-photo-film"></i>
-                </div>
-                <div class="main-icon-container">
-                  <div  class=" fa-icon gif"><span class="gif-text">GIF</span></div>
-                </div>
-                <div class="main-icon-container">
-                  <i class="fa-icon fa-solid fa-square-poll-vertical"></i>
-                </div>
-                <div class="main-icon-container">
-                  <i class="fa-icon fa-regular fa-face-smile"></i>
-                </div>
-                <div class="main-icon-container">
-                  <i class="fa-icon fa-regular fa-calendar-days"></i>
-                </div>
-                <i class="fa-icon fa-solid fa-location-dot"></i>
-              </div>
-              <button class="post-btn">Post</button>
-            </div>
-          </div>
+          <p class="navbar-tooltip">Home</p>
         </div>
 
-        <div class="numberof-unwatched">
-          <p>Show 385 posts</p>
+        <div class="">
+          <i class="fa-solid fa-magnifying-glass fa-search-mobile"></i>
         </div>
 
-        <div class="page">
-          <div class="page-profile-picture profile-picture-container">
-            <img src="Images/ronaldo-profile-picture.jpg" alt="">
-            <div class="profile-picture-hover"></div>
-          </div>
-          <div class="page-content">
-            <div class="page-header">
-              <div class="name">
-                <p class="username">Christiano Ronaldo</p>
-                <img class="tick" src="Images/verify-tick.avif" alt="">
-                <p class="handle">@Christiano &#183 <span class="post-time">4h</span></p>
-              </div>
-              <div class="three-dot more-tooltip-container">
-                <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
-                <p class="more-tooltip">More</p>
-              </div>
-            </div>
-            <div class="tweet ronaldo-tweet">
-              <p>An honour to meet again with His Royal Highness Prince Mohammed bin Salman and great to be part of this panel today discussing the future of esports and the launch of the first ever <span class="ronaldo-tweet-inner-p">#esportsworldcup</span> that will be held in Saudi Arabia next year!</p>
-            </div>
-            <div class="ronaldo-tweet-image-upload">
-              <img class="first-grid" src="Images/ronaldo-grid-one.jpg" alt="">
-              <img class="second-grid" src="Images/ronaldo-grid-two.jpg" alt="">
-              <img class="third-grid" src="Images/ronaldo-grid-three.jpg" alt="">
-              <img class="fourth-grid" src="Images/ronaldo-grid-four.jpg" alt="">
-            </div>
-            <div class="stats-tab">
-              <div class="stats-container stats-comment-container">
-                <i class="fa-regular fa-stats-icon fa-comment-dots"></i>
-                <p class="stats-figure stats-figure-comment-dots">8,377</p>
-              </div>
-              <div class="stats-container stats-retweet-container">
-                <i class="fa-solid fa-stats-icon fa-retweet"></i>
-                <p class="stats-figure stats-figure-retweet">32.1K</p>
-              </div>
-              <div class="stats-container stats-likes-container">
-                <i class="fa-regular fa-stats-icon fa-heart fa-likes"></i>
-                <p class="stats-figure stats-figure-likes">232.8K</p>
-              </div>
-              <div class="stats-container stats-chart-container">
-                <i class="fa-solid fa-stats-icon fa-chart-simple fa-chart"></i>
-                <p class="stats-figure stats-figure-chart">12M</p>
-              </div>
-              <div class="stats-container stats-bookmark-container">
-                <i class="fa-regular fa-stats-icon fa-bookmark fa-bookmark-main"></i>
-                <i class="fa-solid fa-stats-icon fa-arrow-up-from-bracket fa-share-post"></i>
-                <p></p>
-              </div>
-            </div>  
-          </div>
+        <div class="navbar-img-box navbar-tooltip-container">
+          <i class="fa-regular fa-bell fa-icon-navbar"></i>
+          <p class="navbar-tooltip">Notifications</p>
         </div>
 
-        <div class="page">
-          <div class="page-profile-picture profile-picture-container">
-            <img src="Images/davido-profile-picture.jpg" alt="">
-            <div class="profile-picture-hover"></div>
-          </div>
-          <div class="page-content">
-            <div class="page-header">
-              <div class="name">
-                <p class="username">Davido</p>
-                <img class="tick" src="Images/verify-tick.avif" alt="">
-                <p class="handle">@Davido &#183 <span class="post-time">5h</span></p>
-              </div>
-              <div class="three-dot more-tooltip-container">
-                <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
-                <p class="more-tooltip">More</p>
-              </div>
-            </div>
-            <div class="tweet">
-              <div class="davido-tweet">
-                <p class="davido-first-tweet-p">WE BRINGING THE SHOWS BACK HOME TO CLOSE OUT THE YEAR!</p>
-                <p>NIGERIA THEM GO FEEL IT!!!! 30BG WE COMING!!!!</p>
-                <p>OBO BADDEST 001 LETS DO THIS RIGHT!⁣⏳</p>
-              </div>
-            </div>
-            <div class="tweet-image-upload">
-              <img class="davido-upload" src="Images/davido-upload-image.jpg" alt="">
-            </div>
-            <div class="stats-tab">
-              <div class="stats-container stats-comment-container">
-                <i class="fa-regular fa-stats-icon fa-comment-dots"></i>
-                <p class="stats-figure stats-figure-comment-dots">1,688</p>
-              </div>
-              <div class="stats-container stats-retweet-container">
-                <i class="fa-solid fa-stats-icon fa-retweet"></i>
-                <p class="stats-figure stats-figure-retweet">5,054</p>
-              </div>
-              <div class="stats-container stats-likes-container">
-                <i class="fa-solid fa-stats-icon fa-heart fa-liked fa-likes"></i>
-                <p class="stats-figure-liked stats-figure-likes">22.9K</p>
-              </div>
-              <div class="stats-container stats-chart-container">
-                <i class="fa-solid fa-stats-icon fa-chart-simple fa-chart"></i>
-                <p class="stats-figure stats-figure-chart">546.2K</p>
-              </div>
-              <div class="stats-container stats-bookmark-container">
-                <i class="fa-regular fa-stats-icon fa-bookmark fa-bookmark-main"></i>
-                <i class="fa-solid fa-stats-icon fa-arrow-up-from-bracket fa-share-post"></i>
-                <p></p>
-              </div>
-            </div>  
-          </div>
+        <div class="navbar-img-box navbar-tooltip-container">
+          <i class="fa-regular fa-envelope fa-icon-navbar"></i>
+          <p class="navbar-tooltip">Messages</p>
         </div>
 
-        <div class="page">
-          <div class="page-profile-picture profile-picture-container">
-            <img src="Images/tayoaina-profile-picture.jpg" alt="">
-            <div class="profile-picture-hover"></div>
-          </div>
-          <div class="page-content">
-            <div class="page-header">
-              <div class="name">
-                <p class="username">Tayo Aina</p>
-                <img class="tick" src="Images/verify-tick.avif" alt="">
-                <p class="handle">@tayoainafilms &#183 <span class="post-time">1h</span></p>
-              </div>
-              <div class="three-dot more-tooltip-container">
-                <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
-                <p class="more-tooltip">More</p>
-              </div>
-            </div>
-            <div class="tweet">
-              <div class="tayo-tweet">
-                <p class="tayo-first-tweet-p">When I dropped this video, it was at a 7/10. A thumbnail and title change increased the performance to a 3/10 over the past 72 hours.</p>
-                <p>A dying video can be resurrected with suitable packaging so YouTubers, change your thumbnails if they aren't performing appropriately.</p>
-                <p>NB: I… </p>
-                <p class="tayo-showmore-tweet">Show more</p>
-              </div>
-            </div>
-            <div class="tweet-image-upload">
-              <img class="tayo-upload" src="Images/tayo-upload-image.jpg" alt="">
-            </div>
-            <div class="stats-tab">
-              <div class="stats-container stats-comment-container">
-                <i class="fa-regular fa-stats-icon fa-comment-dots"></i>
-                <p class="stats-figure stats-figure-comment-dots">14</p>
-              </div>
-              <div class="stats-container stats-retweet-container">
-                <i class="fa-solid fa-stats-icon fa-retweet"></i>
-                <p class="stats-figure stats-figure-retweet">26</p>
-              </div>
-              <div class="stats-container stats-likes-container">
-                <i class="fa-solid fa-stats-icon fa-heart fa-liked fa-likes"></i>
-                <p class="stats-figure-liked stats-figure-likes">204</p>
-              </div>
-              <div class="stats-container stats-chart-container">
-                <i class="fa-solid fa-stats-icon fa-chart-simple fa-chart"></i>
-                <p class="stats-figure stats-figure-chart">14.5K</p>
-              </div>
-              <div class="stats-container stats-bookmark-container">
-                <i class="fa-regular fa-stats-icon fa-bookmark fa-bookmark-main"></i>
-                <i class="fa-solid fa-stats-icon fa-arrow-up-from-bracket fa-share-post"></i>
-                <p></p>
-              </div>
-            </div>  
-          </div>
-        </div>
-
-        <div class="page">
-          <div class="page-profile-picture profile-picture-container">
-            <img src="Images/veeiye-profile-picture.jpg" alt="">
-            <div class="profile-picture-hover"></div>
-          </div>
-          <div class="page-content">
-            <div class="page-header">
-              <div class="name">
-                <p class="username">VEE.</p>
-                <img class="tick" src="Images/verify-tick.avif" alt="">
-                <p class="handle">@veeiye &#183 <span class="post-time">4h</span></p>
-              </div>
-              <div class="three-dot more-tooltip-container">
-                <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
-                <p class="more-tooltip">More</p>
-              </div>
-            </div>
-            <div class="tweet vee-tweet">
-              <p>I’m in my hosting bag tonight for The Future Awards Africa ✨
-              <p>A multi-talented baddie fr.</p>
-            </div>
-            <div class="tweet-image-upload">
-              <img class="vee-upload" src="Images/vee-iye post.jpg" alt="">
-            </div>
-            <div class="stats-tab">
-              <div class="stats-container stats-comment-container">
-                <i class="fa-regular fa-stats-icon fa-comment-dots"></i>
-                <p class="stats-figure stats-figure-comment-dots">183</p>
-              </div>
-              <div class="stats-container stats-retweet-container">
-                <i class="fa-solid fa-stats-icon fa-retweet"></i>
-                <p class="stats-figure stats-figure-retweet">852</p>
-              </div>
-              <div class="stats-container stats-likes-container">
-                <i class="fa-solid fa-stats-icon fa-heart fa-liked fa-likes"></i>
-                <p class="stats-figure-liked stats-figure-likes">5,891</p>
-              </div>
-              <div class="stats-container stats-chart-container">
-                <i class="fa-solid fa-stats-icon fa-chart-simple fa-chart"></i>
-                <p class="stats-figure stats-figure-chart">126K</p>
-              </div>
-              <div class="stats-container stats-bookmark-container">
-                <i class="fa-regular fa-stats-icon fa-bookmark fa-bookmark-main"></i>
-                <i class="fa-solid fa-stats-icon fa-arrow-up-from-bracket fa-share-post"></i>
-                <p></p>
-              </div>
-            </div>  
-          </div>
-        </div>
-
-        <div class="page hundeyin-page">
-          <div class="page-profile-picture profile-picture-container">
-            <img src="Images/hundeyin-profile-picture.jpg" alt="">
-            <div class="profile-picture-hover"></div>
-          </div>
-          <div class="page-content">
-            <div class="page-header">
-              <div class="name">
-                <p class="username">David Hundeyin</p>
-                <img class="tick" src="Images/verify-tick.avif" alt="">
-                <p class="handle">@DavidHundeyin &#183 <span class="post-time">1h</span></p>
-              </div>
-              <div class="three-dot more-tooltip-container">
-                <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
-                <p class="more-tooltip">More</p>
-              </div>
-            </div>
-            <div class="tweet hundeyin-tweet">
-              <p class="hundeyin-first-p">Whoever is reaching out to prominent family members and offering them big money to help track me down is wasting their time.</p>
-              <p>I haven't spoken to Biodun Hundeyin since 2021, and the last time we spoke before that was 2017 at my dad's funeral. </p>
-              <p>Feel free to waste your money sha.</p>
-            </div>
-            <div class="stats-tab">
-              <div class="stats-container stats-comment-container">
-                <i class="fa-regular fa-stats-icon fa-comment-dots"></i>
-                <p class="stats-figure stats-figure-comment-dots">330</p>
-              </div>
-              <div class="stats-container stats-retweet-container">
-                <i class="fa-solid fa-stats-icon fa-retweet"></i>
-                <p class="stats-figure stats-figure-retweet">1,325</p>
-              </div>
-              <div class="stats-container stats-likes-container">
-                <i class="fa-regular fa-stats-icon fa-heart fa-likes"></i>
-                <p class="stats-figure stats-figure-likes">3,388</p>
-              </div>
-              <div class="stats-container stats-chart-container">
-                <i class="fa-solid fa-stats-icon fa-chart-simple fa-chart"></i>
-                <p class="stats-figure stats-figure-chart">111.4K</p>
-              </div>
-              <div class="stats-container stats-bookmark-container">
-                <i class="fa-regular fa-stats-icon fa-bookmark fa-bookmark-main"></i>
-                <i class="fa-solid fa-stats-icon fa-arrow-up-from-bracket fa-share-post"></i>
-                <p></p>
-              </div>
-            </div>  
-          </div>
+        <div class="mobile-post-container">
+          <button class="mobile-post-btn"><img src="Images/tweet-icon - mobile.png" alt=""> Post</button>
+          <img class="mobile-post-btn-b" src="Images/tweet-icon - mobile.png" alt="">
         </div>
       </div>
 
-      <div class="sidebar">
-        <div class="input-container">
-          <input type="text" name="" placeholder="Search" id="">
-          <i class="fa-solid fa-magnifying-glass fa-magnifying-glass-sidebar"></i>
-        </div>
-
-        <div class="premium-subscription">
-          <p class="premium-header">Subscribe to Premium</p>
-          <p class="premium-text">Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
-          <button class="premium-btn">Subscribe</button>
-        </div>
-
-        <div class="trends">
-          <p class="trends-header">Trends for you</p>
-
-          <div class="trending">
-            <div class="trending-text">
-              <p class="trending-header">Entertainment &#183 Trending</p>
-              <p class="trending-topic">ILEBAYE ODINIYA</p>
-              <p class="trending-stat">24.8K posts</p>
-            </div>
-            <div class="three-dot more-tooltip-container">
-              <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
-              <p class="more-tooltip">More</p>
-            </div>
-          </div>
-
-          <div class="promotions">
-            <p class="promotions-hashtag">#IndomieLoveBowlShow</p>
-            <p class="promotions-text">Get the best family fun, excitement and love on Sundays,AM Family,7pm</p>
-            <p class="promotions-by"><i class="fa-solid fa-square-arrow-up-right"></i> Promoted by Indomie Noodles</p>
-          </div>
-
-          <div class="trending">
-            <div class="trending-text">
-              <p class="trending-header">Trending in Nigeria</p>
-              <p class="trending-topic">BIG LOVE</p>
-              <p class="trending-stat">42.8K posts</p>
-            </div>
-           <div class="three-dot more-tooltip-container">
-              <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
-              <p class="more-tooltip">More</p>
-            </div>
-          </div>
-
-          <div class="trending">
-            <div class="trending-text">
-              <p class="trending-header">Entertainment &#183 Trending</p>
-              <p class="trending-topic">#GENZBADDIE</p>
-              <p class="trending-stat">20.1K posts</p>
-            </div>
-            <div class="three-dot more-tooltip-container">
-              <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
-              <p class="more-tooltip">More</p>
-            </div>
-          </div>
-
-          <div class="trending">
-            <div class="trending-text">
-              <p class="trending-header">Trending</p>
-              <p class="trending-topic">Erica</p>
-              <p class="trending-stat">9,866 posts</p>
-            </div>
-            <div class="three-dot more-tooltip-container">
-              <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
-              <p class="more-tooltip">More</p>
-            </div>
-          </div>
-
-          <div class="trending">
-            <div class="trending-text">
-              <p class="trending-header">Entertainment &#183 Trending</p>
-              <p class="trending-topic">PRAYER FOR PERE</p>
-              <p class="trending-stat">5,676 posts</p>
-            </div>
-            <div class="three-dot more-tooltip-container">
-              <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
-              <p class="more-tooltip">More</p>
-            </div>
-          </div>
-
-          <div class="trending">
-            <div class="trending-text">
-              <p class="trending-header">Entertainment &#183 Trending</p>
-              <p class="trending-topic">Iyabo</p>
-              <p class="trending-stat">1,853 posts</p>
-            </div>
-            <div class="three-dot more-tooltip-container">
-              <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
-              <p class="more-tooltip">More</p>
-            </div>
-          </div>
-
-          <div class="trending">
-            <div class="trending-text">
-              <p class="trending-header">Trending in Nigeria</p>
-              <p class="trending-topic">#HalleluyahChallenge</p>
-              <p class="trending-stat">7,709 posts</p>
-            </div>
-            <div class="three-dot more-tooltip-container">
-              <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
-              <p class="more-tooltip">More</p>
-            </div>
-          </div>
-
-          <div class="trending">
-            <div class="trending-text">
-              <p class="trending-header">Trending in Nigeria</p>
-              <p class="trending-topic">GOLDEN GIRL IS 27</p>
-              <p class="trending-stat">4,767 posts</p>
-            </div>
-            <div class="three-dot more-tooltip-container">
-              <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
-              <p class="more-tooltip">More</p>
-            </div>
-          </div>
-
-          <div class="trending">
-            <div class="trending-text">
-              <p class="trending-header">Music &#183 Trending</p>
-              <p class="trending-topic">Apostle Joshua Selman</p>
-              <p class="trending-stat">9,270 posts</p>
-            </div>
-            <div class="three-dot more-tooltip-container">
-              <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
-              <p class="more-tooltip">More</p>
-            </div>
-          </div>
-
-          <p class="more-text">Show more</p>
-        </div>
-
-        <div class="who-to-follow">
-          <p class="who-to-follow-header">Who to follow</p>
-
-          <div class="follow-option">
-            <div class="profile-picture-follow-option">
-              <img src="Images/nirsal.jpg" alt="">
-              <div class="name-follow-option">
-                <p class="username-follow-option username">Nirsal Microfinance B...</p>
-                <p class="handle">@NirsalMFB</p>
+      <div class="content">
+        <div class="desktop-header">
+          <div class="home-settings">
+            <div class="home-options">
+              <div class="foryou-tab-container">
+                <p class="foryou-tab">For you</p>
+                <div class="blue-tab"></div>
               </div>
+              <div class="following-tab-container">
+                <p class="following-tab">Following</p>
+              </div> 
             </div>
-            <button class="follow-option-btn">Follow</button>
+            <div class="fa-gear-container">
+              <i class="fa-solid fa-gear"></i>
+              <p class="fa-gear-tooltip">Timeline Settings</p>
+            </div>
           </div>
-          <div class="follow-option">
-            <div class="profile-picture-follow-option">
-              <img src="Images/atabinore.jpg" alt="">
-              <div class="name-follow-option">
-                <p class="username-follow-option username">Atabinore A.J</p>
-                <p class="handle">@atabinore</p>
+
+          <div class="input-container">
+            <input type="text" name="" placeholder="Search" id="">
+            <i class="fa-solid fa-magnifying-glass fa-magnifying-glass-sidebar"></i>
+          </div>
+        </div>
+        <div class="mobile-header">
+          <div class="mobile-profile-picture">
+            <img src="Images/profile pic.png" alt="">
+          </div>
+          <div class="mobile-logo-icon">
+            <i class="fa-brands fa-x-twitter mobile-logo"></i>
+          </div>
+          <div class="mobile-settings-icon">
+            <i class="fa-solid fa-gear mobile-settings"></i>
+          </div>
+        </div>
+
+        <div class="main-sidebar">
+          <div class="main">
+            <div class="whatshappening-container">
+              <div class="profile-picture-container">
+                <img class="profile-picture" src="Images/profile pic.png" alt="">
+                <div class="profile-picture-hover"></div>
               </div>
-            </div>
-            <button class="follow-option-btn">Follow</button>
-          </div>
-          <div class="follow-option dogal-follow-option">
-            <div class="profile-picture-follow-option">
-              <img src="Images/dogan.jpg" alt="">
-              <div>
-                <div class="name-tick">
-                  <p class="username">Dogan Ural</p> 
-                  <img class="verify-tick" src="Images/verify-tick.avif" alt="">
+              <div class="whatshappening-text">
+                <p>What is happening?!</p>
+                <div class="whatshappening-icons-btn-container">
+                  <div class="whatshappening-icons">
+                    <div class="main-icon-container">
+                      <i class=" fa-icon fa-solid fa-photo-film"></i>
+                    </div>
+                    <div class="main-icon-container">
+                      <div  class=" fa-icon gif"><span class="gif-text">GIF</span></div>
+                    </div>
+                    <div class="main-icon-container">
+                      <i class="fa-icon fa-solid fa-square-poll-vertical"></i>
+                    </div>
+                    <div class="main-icon-container">
+                      <i class="fa-icon fa-regular fa-face-smile"></i>
+                    </div>
+                    <div class="main-icon-container">
+                      <i class="fa-icon fa-regular fa-calendar-days"></i>
+                    </div>
+                    <i class="fa-icon fa-solid fa-location-dot"></i>
+                  </div>
+                  <button class="post-btn">Post</button>
                 </div>
-                <p class="dogan-handle handle">@doganuraldesign</p>
               </div>
             </div>
-            <button class="follow-option-btn">Follow</button>
-          </div>
-          <p class="more-text">Show more</p>
-        </div>
-
-        <div class="terms">
-          <div class="top-terms">
-            <p>Terms of Service</p>
-            <p>Privacy Policy</p>
-            <p>Cookie Policy</p>
-          </div>
-          <div class="bottom-terms">
-            <p>Accessibility</p>
-            <p>Ads info</p>
-            <div class="more-terms">
-              <p>More</p>
-              <i class="fa-solid fa-ellipsis fa-ellipsis-terms"></i>
+    
+            <div class="numberof-unwatched">
+              <p>Show 385 posts</p>
             </div>
-            <div class="copyright-terms">
-              <i class="fa-regular fa-copyright"></i>
-              <p>2023 X Corp.</p>
+    
+            <div class="page">
+              <div class="page-profile-picture profile-picture-container">
+                <img src="Images/ronaldo-profile-picture.jpg" alt="">
+                <div class="profile-picture-hover"></div>
+              </div>
+              <div class="page-content">
+                <div class="page-header">
+                  <div class="name">
+                    <div class="username-tick">
+                      <p class="username">Christiano Ronaldo</p>
+                      <img class="tick" src="Images/verify-tick.avif" alt="">
+                    </div>
+                    <div class="handle-time">
+                      <p class="handle">@Christiano &#183 <span class="post-time">4h</span></p>
+                    </div>
+                  </div>
+                  <div class="three-dot more-tooltip-container">
+                    <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
+                    <p class="more-tooltip">More</p>
+                  </div>
+                </div>
+                <div class="tweet ronaldo-tweet">
+                  <p>An honour to meet again with His Royal Highness Prince Mohammed bin Salman and great to be part of this panel today discussing the future of esports and the launch of the first ever <span class="ronaldo-tweet-inner-p">#esportsworldcup</span> that will be held in Saudi Arabia next year!</p>
+                </div>
+                <div class="ronaldo-tweet-image-upload">
+                  <div class="top-grid">
+                    <img class="first-grid grid-upload" src="Images/ronaldo-grid-one.jpg" alt="">
+                    <img class="second-grid grid-upload" src="Images/ronaldo-grid-two.jpg" alt="">
+                  </div>
+                  <div class="bottom-grid">                
+                  <img class="third-grid grid-upload" src="Images/ronaldo-grid-three.jpg" alt="">
+                  <img class="fourth-grid grid-upload" src="Images/ronaldo-grid-four.jpg" alt="">
+                  </div>           
+                </div>
+                <div class="stats-tab">
+                  <div class="stats-container stats-comment-container">
+                    <i class="fa-regular fa-stats-icon fa-comment-dots"></i>
+                    <p class="stats-figure stats-figure-comment-dots">8,377</p>
+                  </div>
+                  <div class="stats-container stats-retweet-container">
+                    <i class="fa-solid fa-stats-icon fa-retweet"></i>
+                    <p class="stats-figure stats-figure-retweet">32.1K</p>
+                  </div>
+                  <div class="stats-container stats-likes-container">
+                    <i class="fa-regular fa-stats-icon fa-heart fa-likes"></i>
+                    <p class="stats-figure stats-figure-likes">232.8K</p>
+                  </div>
+                  <div class="stats-container stats-chart-container">
+                    <i class="fa-solid fa-stats-icon fa-chart-simple fa-chart"></i>
+                    <p class="stats-figure stats-figure-chart">12M</p>
+                  </div>
+                  <div class="stats-container stats-bookmark-container">
+                    <i class="fa-regular fa-stats-icon fa-bookmark fa-bookmark-main"></i>
+                    <i class="fa-solid fa-stats-icon fa-arrow-up-from-bracket fa-share-post"></i>
+                    <p></p>
+                  </div>
+                </div>  
+              </div>
+            </div>
+    
+            <div class="page">
+              <div class="page-profile-picture profile-picture-container">
+                <img src="Images/davido-profile-picture.jpg" alt="">
+                <div class="profile-picture-hover"></div>
+              </div>
+              <div class="page-content">
+                <div class="page-header">
+                  <div class="name">
+                    <div class="username-tick">
+                      <p class="username">Davido</p>
+                      <img class="tick" src="Images/verify-tick.avif" alt="">
+                    </div>
+                    <div class="handle-time">
+                      <p class="handle">@Davido &#183 <span class="post-time">5h</span></p>
+                    </div>
+                  </div>
+                  <div class="three-dot more-tooltip-container">
+                    <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
+                    <p class="more-tooltip">More</p>
+                  </div>
+                </div>
+                <div class="tweet">
+                  <div class="davido-tweet">
+                    <p class="davido-first-tweet-p">WE BRINGING THE SHOWS BACK HOME TO CLOSE OUT THE YEAR!</p>
+                    <p>NIGERIA THEM GO FEEL IT!!!! 30BG WE COMING!!!!</p>
+                    <p>OBO BADDEST 001 LETS DO THIS RIGHT!⁣⏳</p>
+                  </div>
+                </div>
+                <div class="tweet-image-upload">
+                  <img class="davido-upload tweet-image" src="Images/davido-upload-image.jpg" alt="">
+                </div>
+                <div class="stats-tab">
+                  <div class="stats-container stats-comment-container">
+                    <i class="fa-regular fa-stats-icon fa-comment-dots"></i>
+                    <p class="stats-figure stats-figure-comment-dots">1,688</p>
+                  </div>
+                  <div class="stats-container stats-retweet-container">
+                    <i class="fa-solid fa-stats-icon fa-retweet"></i>
+                    <p class="stats-figure stats-figure-retweet">5,054</p>
+                  </div>
+                  <div class="stats-container stats-likes-container">
+                    <i class="fa-solid fa-stats-icon fa-heart fa-liked fa-likes"></i>
+                    <p class="stats-figure-liked stats-figure-likes">22.9K</p>
+                  </div>
+                  <div class="stats-container stats-chart-container">
+                    <i class="fa-solid fa-stats-icon fa-chart-simple fa-chart"></i>
+                    <p class="stats-figure stats-figure-chart">546.2K</p>
+                  </div>
+                  <div class="stats-container stats-bookmark-container">
+                    <i class="fa-regular fa-stats-icon fa-bookmark fa-bookmark-main"></i>
+                    <i class="fa-solid fa-stats-icon fa-arrow-up-from-bracket fa-share-post"></i>
+                    <p></p>
+                  </div>
+                </div>  
+              </div>
+            </div>
+    
+            <div class="page">
+              <div class="page-profile-picture profile-picture-container">
+                <img src="Images/tayoaina-profile-picture.jpg" alt="">
+                <div class="profile-picture-hover"></div>
+              </div>
+              <div class="page-content">
+                <div class="page-header">
+                  <div class="name">
+                    <div class="username-tick">
+                      <p class="username">Tayo Aina</p>
+                      <img class="tick" src="Images/verify-tick.avif" alt="">
+                    </div>
+                    <div class="handle-time">
+                      <p class="handle">@tayoainafilms &#183 <span class="post-time">1h</span></p>
+                    </div>                
+                  </div>
+                  <div class="three-dot more-tooltip-container">
+                    <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
+                    <p class="more-tooltip">More</p>
+                  </div>
+                </div>
+                <div class="tweet">
+                  <div class="tayo-tweet">
+                    <p class="tayo-first-tweet-p">When I dropped this video, it was at a 7/10. A thumbnail and title change increased the performance to a 3/10 over the past 72 hours.</p>
+                    <p>A dying video can be resurrected with suitable packaging so YouTubers, change your thumbnails if they aren't performing appropriately.</p>
+                    <p>NB: I… </p>
+                    <p class="tayo-showmore-tweet">Show more</p>
+                  </div>
+                </div>
+                <div class="tweet-image-upload">
+                  <img class="tayo-upload tweet-image" src="Images/tayo-upload-image.jpg" alt="">
+                </div>
+                <div class="stats-tab">
+                  <div class="stats-container stats-comment-container">
+                    <i class="fa-regular fa-stats-icon fa-comment-dots"></i>
+                    <p class="stats-figure stats-figure-comment-dots">14</p>
+                  </div>
+                  <div class="stats-container stats-retweet-container">
+                    <i class="fa-solid fa-stats-icon fa-retweet"></i>
+                    <p class="stats-figure stats-figure-retweet">26</p>
+                  </div>
+                  <div class="stats-container stats-likes-container">
+                    <i class="fa-solid fa-stats-icon fa-heart fa-liked fa-likes"></i>
+                    <p class="stats-figure-liked stats-figure-likes">204</p>
+                  </div>
+                  <div class="stats-container stats-chart-container">
+                    <i class="fa-solid fa-stats-icon fa-chart-simple fa-chart"></i>
+                    <p class="stats-figure stats-figure-chart">14.5K</p>
+                  </div>
+                  <div class="stats-container stats-bookmark-container">
+                    <i class="fa-regular fa-stats-icon fa-bookmark fa-bookmark-main"></i>
+                    <i class="fa-solid fa-stats-icon fa-arrow-up-from-bracket fa-share-post"></i>
+                    <p></p>
+                  </div>
+                </div>  
+              </div>
+            </div>
+    
+            <div class="page">
+              <div class="page-profile-picture profile-picture-container">
+                <img src="Images/veeiye-profile-picture.jpg" alt="">
+                <div class="profile-picture-hover"></div>
+              </div>
+              <div class="page-content">
+                <div class="page-header">
+                  <div class="name">
+                    <div class="username-tick">
+                      <p class="username">VEE.</p>
+                      <img class="tick" src="Images/verify-tick.avif" alt="">
+                    </div>
+                    <div class="handle-time">
+                      <p class="handle">@veeiye &#183 <span class="post-time">4h</span></p>
+                    </div>                
+                  </div>
+                  <div class="three-dot more-tooltip-container">
+                    <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
+                    <p class="more-tooltip">More</p>
+                  </div>
+                </div>
+                <div class="tweet vee-tweet">
+                  <p>I’m in my hosting bag tonight for The Future Awards Africa ✨
+                  <p>A multi-talented baddie fr.</p>
+                </div>
+                <div class="tweet-image-upload">
+                  <img class="vee-upload tweet-image" src="Images/vee-iye post.jpg" alt="">
+                </div>
+                <div class="stats-tab">
+                  <div class="stats-container stats-comment-container">
+                    <i class="fa-regular fa-stats-icon fa-comment-dots"></i>
+                    <p class="stats-figure stats-figure-comment-dots">183</p>
+                  </div>
+                  <div class="stats-container stats-retweet-container">
+                    <i class="fa-solid fa-stats-icon fa-retweet"></i>
+                    <p class="stats-figure stats-figure-retweet">852</p>
+                  </div>
+                  <div class="stats-container stats-likes-container">
+                    <i class="fa-solid fa-stats-icon fa-heart fa-liked fa-likes"></i>
+                    <p class="stats-figure-liked stats-figure-likes">5,891</p>
+                  </div>
+                  <div class="stats-container stats-chart-container">
+                    <i class="fa-solid fa-stats-icon fa-chart-simple fa-chart"></i>
+                    <p class="stats-figure stats-figure-chart">126K</p>
+                  </div>
+                  <div class="stats-container stats-bookmark-container">
+                    <i class="fa-regular fa-stats-icon fa-bookmark fa-bookmark-main"></i>
+                    <i class="fa-solid fa-stats-icon fa-arrow-up-from-bracket fa-share-post"></i>
+                    <p></p>
+                  </div>
+                </div>  
+              </div>
+            </div>
+    
+            <div class="page hundeyin-page">
+              <div class="page-profile-picture profile-picture-container">
+                <img src="Images/hundeyin-profile-picture.jpg" alt="">
+                <div class="profile-picture-hover"></div>
+              </div>
+              <div class="page-content">
+                <div class="page-header">
+                  <div class="name">
+                    <div class="username-tick">
+                      <p class="username">David Hundeyin</p>
+                    </div>
+                    <img class="tick" src="Images/verify-tick.avif" alt="">
+                    <div class="handle-time">
+                      <p class="handle">@DavidHundeyin &#183 <span class="post-time">1h</span></p>
+                    </div>
+                  </div>
+                  <div class="three-dot more-tooltip-container">
+                    <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
+                    <p class="more-tooltip">More</p>
+                  </div>
+                </div>
+                <div class="tweet hundeyin-tweet">
+                  <p class="hundeyin-first-p">Whoever is reaching out to prominent family members and offering them big money to help track me down is wasting their time.</p>
+                  <p>I haven't spoken to Biodun Hundeyin since 2021, and the last time we spoke before that was 2017 at my dad's funeral. </p>
+                  <p>Feel free to waste your money sha.</p>
+                </div>
+                <div class="stats-tab">
+                  <div class="stats-container stats-comment-container">
+                    <i class="fa-regular fa-stats-icon fa-comment-dots"></i>
+                    <p class="stats-figure stats-figure-comment-dots">330</p>
+                  </div>
+                  <div class="stats-container stats-retweet-container">
+                    <i class="fa-solid fa-stats-icon fa-retweet"></i>
+                    <p class="stats-figure stats-figure-retweet">1,325</p>
+                  </div>
+                  <div class="stats-container stats-likes-container">
+                    <i class="fa-regular fa-stats-icon fa-heart fa-likes"></i>
+                    <p class="stats-figure stats-figure-likes">3,388</p>
+                  </div>
+                  <div class="stats-container stats-chart-container">
+                    <i class="fa-solid fa-stats-icon fa-chart-simple fa-chart"></i>
+                    <p class="stats-figure stats-figure-chart">111.4K</p>
+                  </div>
+                  <div class="stats-container stats-bookmark-container">
+                    <i class="fa-regular fa-stats-icon fa-bookmark fa-bookmark-main"></i>
+                    <i class="fa-solid fa-stats-icon fa-arrow-up-from-bracket fa-share-post"></i>
+                    <p></p>
+                  </div>
+                </div>  
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="fixed-message-box">
-          <p class="fixed-message-text">Messages</p>
-          <div class="fixed-message-icons">
-            <div class="fixed-message-icon-container fixed-message-tooltip-container">
-              <i class="fa-regular fa-envelope"></i>
-              <i class="fa-solid fa-plus"></i>
-              <p class="fixed-message-tooltip message-tooltip-fixed">New message</p>
+    
+          <div class="sidebar">
+            <div class="premium-subscription">
+              <p class="premium-header">Subscribe to Premium</p>
+              <p class="premium-text">Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+              <button class="premium-btn">Subscribe</button>
             </div>
-            <div class="fixed-message-tooltip-container">
-              <i class="fa-solid fa-angles-up"></i>
-              <p class="fixed-message-tooltip">Expand</p>
+    
+            <div class="trends">
+              <p class="trends-header">Trends for you</p>
+    
+              <div class="trending">
+                <div class="trending-text">
+                  <p class="trending-header">Entertainment &#183 Trending</p>
+                  <p class="trending-topic">ILEBAYE ODINIYA</p>
+                  <p class="trending-stat">24.8K posts</p>
+                </div>
+                <div class="three-dot more-tooltip-container">
+                  <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
+                  <p class="more-tooltip">More</p>
+                </div>
+              </div>
+    
+              <div class="promotions">
+                <p class="promotions-hashtag">#IndomieLoveBowlShow</p>
+                <p class="promotions-text">Get the best family fun, excitement and love on Sundays,AM Family,7pm</p>
+                <p class="promotions-by"><i class="fa-solid fa-square-arrow-up-right"></i> Promoted by Indomie Noodles</p>
+              </div>
+    
+              <div class="trending">
+                <div class="trending-text">
+                  <p class="trending-header">Trending in Nigeria</p>
+                  <p class="trending-topic">BIG LOVE</p>
+                  <p class="trending-stat">42.8K posts</p>
+                </div>
+               <div class="three-dot more-tooltip-container">
+                  <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
+                  <p class="more-tooltip">More</p>
+                </div>
+              </div>
+    
+              <div class="trending">
+                <div class="trending-text">
+                  <p class="trending-header">Entertainment &#183 Trending</p>
+                  <p class="trending-topic">#GENZBADDIE</p>
+                  <p class="trending-stat">20.1K posts</p>
+                </div>
+                <div class="three-dot more-tooltip-container">
+                  <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
+                  <p class="more-tooltip">More</p>
+                </div>
+              </div>
+    
+              <div class="trending">
+                <div class="trending-text">
+                  <p class="trending-header">Trending</p>
+                  <p class="trending-topic">Erica</p>
+                  <p class="trending-stat">9,866 posts</p>
+                </div>
+                <div class="three-dot more-tooltip-container">
+                  <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
+                  <p class="more-tooltip">More</p>
+                </div>
+              </div>
+    
+              <div class="trending">
+                <div class="trending-text">
+                  <p class="trending-header">Entertainment &#183 Trending</p>
+                  <p class="trending-topic">PRAYER FOR PERE</p>
+                  <p class="trending-stat">5,676 posts</p>
+                </div>
+                <div class="three-dot more-tooltip-container">
+                  <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
+                  <p class="more-tooltip">More</p>
+                </div>
+              </div>
+    
+              <div class="trending">
+                <div class="trending-text">
+                  <p class="trending-header">Entertainment &#183 Trending</p>
+                  <p class="trending-topic">Iyabo</p>
+                  <p class="trending-stat">1,853 posts</p>
+                </div>
+                <div class="three-dot more-tooltip-container">
+                  <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
+                  <p class="more-tooltip">More</p>
+                </div>
+              </div>
+    
+              <div class="trending">
+                <div class="trending-text">
+                  <p class="trending-header">Trending in Nigeria</p>
+                  <p class="trending-topic">#HalleluyahChallenge</p>
+                  <p class="trending-stat">7,709 posts</p>
+                </div>
+                <div class="three-dot more-tooltip-container">
+                  <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
+                  <p class="more-tooltip">More</p>
+                </div>
+              </div>
+    
+              <div class="trending">
+                <div class="trending-text">
+                  <p class="trending-header">Trending in Nigeria</p>
+                  <p class="trending-topic">GOLDEN GIRL IS 27</p>
+                  <p class="trending-stat">4,767 posts</p>
+                </div>
+                <div class="three-dot more-tooltip-container">
+                  <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
+                  <p class="more-tooltip">More</p>
+                </div>
+              </div>
+    
+              <div class="trending">
+                <div class="trending-text">
+                  <p class="trending-header">Music &#183 Trending</p>
+                  <p class="trending-topic">Apostle Joshua Selman</p>
+                  <p class="trending-stat">9,270 posts</p>
+                </div>
+                <div class="three-dot more-tooltip-container">
+                  <i class="fa-solid fa-ellipsis fa-ellipsis-main"></i>
+                  <p class="more-tooltip">More</p>
+                </div>
+              </div>
+    
+              <p class="more-text">Show more</p>
+            </div>
+    
+            <div class="who-to-follow">
+              <p class="who-to-follow-header">Who to follow</p>
+    
+              <div class="follow-option">
+                <div class="profile-picture-follow-option">
+                  <img src="Images/nirsal.jpg" alt="">
+                  <div class="name-follow-option">
+                    <p class="username-follow-option username">Nirsal Microfinance B...</p>
+                    <p class="handle">@NirsalMFB</p>
+                  </div>
+                </div>
+                <button class="follow-option-btn">Follow</button>
+              </div>
+              <div class="follow-option">
+                <div class="profile-picture-follow-option">
+                  <img src="Images/atabinore.jpg" alt="">
+                  <div class="name-follow-option">
+                    <p class="username-follow-option username">Atabinore A.J</p>
+                    <p class="handle">@atabinore</p>
+                  </div>
+                </div>
+                <button class="follow-option-btn">Follow</button>
+              </div>
+              <div class="follow-option dogal-follow-option">
+                <div class="profile-picture-follow-option">
+                  <img src="Images/dogan.jpg" alt="">
+                  <div>
+                    <div class="name-tick">
+                      <p class="username">Dogan Ural</p> 
+                      <img class="verify-tick" src="Images/verify-tick.avif" alt="">
+                    </div>
+                    <p class="dogan-handle handle">@doganuraldesign</p>
+                  </div>
+                </div>
+                <button class="follow-option-btn">Follow</button>
+              </div>
+              <p class="more-text">Show more</p>
+            </div>
+    
+            <div class="terms">
+              <div class="top-terms">
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+                <p>Cookie Policy</p>
+              </div>
+              <div class="bottom-terms">
+                <p>Accessibility</p>
+                <p>Ads info</p>
+                <div class="more-terms">
+                  <p>More</p>
+                  <i class="fa-solid fa-ellipsis fa-ellipsis-terms"></i>
+                </div>
+                <div class="copyright-terms">
+                  <i class="fa-regular fa-copyright"></i>
+                  <p>2023 X Corp.</p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="fixed-message-box">
+              <p class="fixed-message-text">Messages</p>
+              <div class="fixed-message-icons">
+                <div class="fixed-message-icon-container fixed-message-tooltip-container">
+                  <i class="fa-regular fa-envelope"></i>
+                  <i class="fa-solid fa-plus"></i>
+                  <p class="fixed-message-tooltip message-tooltip-fixed">New message</p>
+                </div>
+                <div class="fixed-message-tooltip-container">
+                  <i class="fa-solid fa-angles-up"></i>
+                  <p class="fixed-message-tooltip">Expand</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
